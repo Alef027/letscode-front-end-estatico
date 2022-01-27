@@ -1,0 +1,65 @@
+        /* Seletor universal */
+        * {
+            margin: 0;
+        }
+        /* Seletor por tag */
+    
+        h1 {
+            color: blue;
+        }
+        h2 {
+            color: green;
+            margin: 10px;
+        }
+        .titulo,
+        .subtitulo {
+            color: red;
+        }
+        .subtitulo-yellow {
+            background-color: yellow;
+            width: 50vw;
+            height: 10;
+        }
+        #negrito{
+            font-weight: bold;
+        }
+        a[title] {
+            color: red;
+        }
+        a[title="titulo 1"] {
+            color: black;
+        }
+        p[class~=] {
+            font-size: 32px;
+        }
+        p[class|="texto-qualquer"] {
+            margin-top: 24px;
+        }
+        p[class|="texto"] {
+            margin-top: 24px;
+        }
+
+        p[class^="texto"] {
+            border: 1px solid black;
+        }
+        p[class$="verde"] {
+            color: green;
+        }
+        a[title*="titu"] {
+            color: blue;
+        }
+        p + span {
+            border: 1px solid red;
+        }
+        p ~ span {
+            color: green;
+        }
+        ul > li {
+            border-bottom: 1px solid black;
+        }
+        div > p {
+            border: 1px solid blue;
+        }
+        div .texto-negrito {
+            font-weight: 100;
+        }
